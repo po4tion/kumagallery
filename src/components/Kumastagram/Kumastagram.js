@@ -31,6 +31,18 @@ const Btn = styled.p`
   border-radius: 5px;
   padding: 10px;
   cursor: pointer;
+  background-color: #badc58;
+  color: black;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+
+  &:hover {
+    background-color: black;
+    color: #fff;
+  }
 `;
 
 const GridBlock = styled.div`

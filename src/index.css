@@ -3,4 +3,17 @@ body {
   padding: 0;
   box-sizing: border-box;
   overflow: scroll;
+  position: relative;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+  background-image: url('https://cdn.pixabay.com/photo/2014/04/03/00/39/paw-prints-308974_960_720.png');
+  z-index: -1;
 }

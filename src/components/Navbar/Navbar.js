@@ -15,7 +15,12 @@ const GalleryNav = styled.div`
 const GalleryName = styled.h1`
   padding-left: 20px;
   font-family: 'SDSamliphopangche_Outline', sans-serif;
-  font-size: 40px;
+  font-size: 50px;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
 `;
 
 const GalleryUnlist = styled.ul`
@@ -42,10 +47,14 @@ const GalleryUnlist = styled.ul`
 const Navbar = () => {
   return (
     <GalleryNav>
-      <GalleryName>쿠마 갤러리</GalleryName>
+      <GalleryName>
+        <Link to="/">쿠마 갤러리</Link>
+      </GalleryName>
       <GalleryUnlist>
         <li>
-          {/* <a href="/profile">쿠마의 견적사항</a> */}
+          <Link to="/">홈</Link>
+        </li>
+        <li>
           <Link to="/profile">쿠마의 견적사항</Link>
         </li>
         <li>
